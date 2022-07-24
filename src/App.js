@@ -27,10 +27,16 @@ export default function App() {
   };
   return (
     <div className="App">
-      <div>{number > 0 ? number : "Press Start"}</div>
+      <div>
+        {number > 0 ? (
+          <div className="timer__value">{number}</div>
+        ) : (
+          "Press Start"
+        )}
+      </div>
       <button onClick={startNumbers}>Start Numbers</button>
       <button onClick={stopNumbers}>Stop Numbers</button>
-      {result > 0 && <div>Result : {result}</div>}
+      {result > 0 && <div className="result">Result : {result}</div>}
     </div>
   );
 }

@@ -2,3 +2,13 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.timer__value {
+  font-size: 10em;
+  color: Red;
+}
+
+.result {
+  font-size: 5em;
+  color: brown;
+}
